@@ -28,18 +28,71 @@ Page({
   },
   // 微信api ----> 网络请求
   testNetwork: function(event){
+    var data= 'undefined'
     wx.request({
       url: 'http://www.bilibili.com',
       method: "GET",
       header:{},
       success:function(res){
+        console.log('in seccess,异步')
+        data = res.data
         console.log('网络请求成功,具体内容如下:',res.data)
       },
       fail: function(res){
         console.log('网络请求失败')
       }
     })
+    console.log('data',data)
   },
+
+  //本地缓存api 
+  //将数据存储在本地缓存中指定的key中,数据存储生命周期跟小程序本身一致
+  // wx.setStorage  把数据保存在指定的key
+  // wx.getStorage  把数据从key中取出来
+  // wx.removeStorage   把数据从本地缓存中删除
+  // wx.clearStorage    把本地所以的缓存都删除,操作所以缓存
+  testStorage:function(){
+    // 此处读写是 异步
+    // 写缓存
+    wx.setStorage({
+      key: 'test',
+      data: 'data',
+    })
+    // 读缓存
+    wx.getStorage({
+      key: 'test',
+      success: function(res) {
+        var data = res.data
+        console.log('数据缓存来源(异步),data from storage1:',data)
+      },
+    })
+    //次处读写是同步
+    var data=wx.getStorageSync('test')
+    console.log('数据缓存来源(同步),data from storage2:',data)
+  },
+  // 文件系统api
+  
+  // 全局文件管理器,增删改查,文件夹操作
+  // 全局文件管理器获取: var fs=wx.getFileSystemManager()
+  
+  // 文件的增删改查 完全覆盖编程语言对文件的各种操作
+  // fs.saveFile  保存文件
+  // fs.removeSavedFile 删除保存文件
+  // fs.writeFile 写
+  // fs.readFile  从文件读取内容
+  // fs.appendFile  往文件追加内容
+  
+  // 文件夹操作 
+  // fs.mkdir   创建
+  // fs.rmdir   删除
+  // fs.isDirectory 判断指定路径是否是文件夹
+  // fs.isFile      判断指定路径是否是文件
+
+  // 开放能力   // 用户数据 wx.getUserInfo()  // openid等敏感数据  
+  // 推送消息
+  // 运营数据
+  
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/demogird/demogird"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,18 +11,24 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "",
-      "selectedIconPath": ""
-    },
-    {
-      "pagePath": "pages/logs/logs",
-      "text": "日志",
-      "iconPath": "",
-      "selectedIconPath": ""
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/demogird/demogird",
+        "text": "九宫格"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
