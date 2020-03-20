@@ -14,14 +14,18 @@
   <view>{{ message }}</view>
   <!-- 列表渲染   for循环 -->
   <view wx:for="{{array}}">
-  No.{{index}} item, message: {{item.message}}
+    No.{{index}} item, message: {{item.message}}
   </view>
-  <!-- <view wx:for="{{array}}">
-  No.{{index}} item, name: {{ item.name}}
-  </view> -->
+  <!-- <view wx:for="{{array}}"> -->
+  <!-- No.{{index}} item, msg: {{item.msg}} -->
+  <!-- </view> -->
   <!-- 绑定事件  点击  -->
   <view bindtap="tapName">TapTap</view>
-   <!-- 微信api---网络请求 按钮  -->
+  <view bindtap="dianji">dianwo</view>
+  <view bindlongpress="changan">长按</view>
+  <button bindtap="dianji">dianwo</button>
+  <button bindlongpress="changan">按我</button>
+  <!-- 微信api---网络请求 按钮  -->
   <button bindtap="testNetwork">网络请求测试,Test Network</button>
   <button bindtap="testStorage">测试缓存, Test Storage</button>
 </view>

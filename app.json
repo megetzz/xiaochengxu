@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/demogird/demogird"
+    "pages/demogird/demogird",
+    "pages/ceshi/ceshi"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,6 +13,12 @@
   },
   "tabBar": {
     "list": [
+      {
+        "pagePath": "pages/ceshi/ceshi",
+        "text": "测试",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
       {
         "pagePath": "pages/index/index",
         "text": "首页",
