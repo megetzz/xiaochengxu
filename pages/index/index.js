@@ -4,11 +4,12 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Hello World,hello minprogram',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     message:"Hello,world,hello django ,hello zz",
+    name:'我是张三',
     // 数组 列表渲染
     array:[
       {
@@ -18,7 +19,7 @@ Page({
         message:"hello,django"
       },
       {
-        message:"hello,zz",
+        message:"hello,zz"
       }
     ]
   },

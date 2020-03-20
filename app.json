@@ -26,7 +26,9 @@
       },
       {
         "pagePath": "pages/demogird/demogird",
-        "text": "九宫格"
+        "text": "九宫格",
+        "iconPath": "",
+        "selectedIconPath": ""
       }
     ]
   },
