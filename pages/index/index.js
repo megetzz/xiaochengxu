@@ -26,6 +26,12 @@ Page({
   tapName: function () {
     console.log('触发点击事件')
   },
+  dianji:function(){
+    console.log('点击事件启动')
+  },
+  changan:function(){
+    console.log('长按事件启动')
+  },
   // 微信api ----> 网络请求
   testNetwork: function (event) {
     var data = 'undefined'
@@ -93,6 +99,48 @@ Page({
   // 推送消息
   // 运营数据
 
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    console.log('首页显示')
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+    console.log('首页隐藏')
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+    console.log('首页退出时触发')
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+    console.log('用户下拉')
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
 
   //事件处理函数
   bindViewTap: function () {

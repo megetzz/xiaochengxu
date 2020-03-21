@@ -16,26 +16,26 @@
       {
         "pagePath": "pages/ceshi/ceshi",
         "text": "测试",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "pages/images/icon_tabbar.png",
+        "selectedIconPath": "pages/images/abc.png"
       },
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "pages/images/icon_tabbar.png",
+        "selectedIconPath": "pages/images/abc.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "日志",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "pages/images/icon_tabbar.png",
+        "selectedIconPath": "pages/images/abc.png"
       },
       {
         "pagePath": "pages/demogird/demogird",
         "text": "九宫格",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "pages/images/icon_tabbar.png",
+        "selectedIconPath": "pages/images/abc.png"
       }
     ]
   },
