@@ -32,7 +32,8 @@ Page({
   test_network: function() {
     var data = undefined
     wx.request({
-      url: 'https://www.bilibili.com',
+      // url: 'https://www.bilibili.com',
+      url:'http://v.juhe.cn/joke/content/list.php?sort=asc&page=10&pagesize=20&time=1014466512&key=ccea89c0e0afc91fe1f4db1e233d474d',
       method: "GET",
       header: {},
       success: function(res) {
@@ -53,14 +54,16 @@ Page({
       // url:'http://httpbin.org/',
       // url: 'http://www.jd.com',
       // url:'https://python.org/',
-      url: 'http://127.0.0.1:8000/blog/index/',
+      // url: 'http://127.0.0.1:8000/blog/index/',
+      // url:'http://v.juhe.cn/joke/content/list.php?sort=asc&page=10&pagesize=20&time=1014466512&key=ccea89c0e0afc91fe1f4db1e233d474d',
+      url:'http://127.0.0.1:8000/api/v1.0/jokes/juhe/',
       method: "GET",
       header: {},
       //success和fail是耗时操作
       success: function(res) {
         result = res.data
         console.log('请求成功')
-        console.log('结果成功:' + result)
+        console.log('结果成功:' + res.data.result.data)
       },
       fail: function(res) {
         console.log('结果失败:')
