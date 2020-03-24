@@ -1,43 +1,28 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/demogird/demogird",
-    "pages/ceshi/ceshi"
+    "pages/apps/apps",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#f00",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/ceshi/ceshi",
-        "text": "测试",
-        "iconPath": "pages/images/icon_tabbar.png",
-        "selectedIconPath": "pages/images/abc.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "pages/images/icon_tabbar.png",
-        "selectedIconPath": "pages/images/abc.png"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
-        "iconPath": "pages/images/icon_tabbar.png",
-        "selectedIconPath": "pages/images/abc.png"
-      },
-      {
-        "pagePath": "pages/demogird/demogird",
-        "text": "九宫格",
-        "iconPath": "pages/images/icon_tabbar.png",
-        "selectedIconPath": "pages/images/abc.png"
-      }
-    ]
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/icon_tabbar.png",
+      "selectedIconPath": "/images/abc.png"
+    },
+    {
+      "pagePath": "pages/apps/apps",
+      "text": "应用",
+      "iconPath": "/images/icon_tabbar.png",
+      "selectedIconPath": "/images/abc.png"
+    }]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

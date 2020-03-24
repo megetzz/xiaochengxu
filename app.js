@@ -35,6 +35,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    abc :'全局变量abc'
+    appurl:'http://127.0.0.1:8000/api',
+    appv:'/v1.0',
+    routeapp:'/apps'
   }
 })
