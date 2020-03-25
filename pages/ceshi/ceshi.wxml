@@ -1,0 +1,17 @@
+<!--pages/ceshi/ceshi.wxml-->
+<view>
+  <text>pages/ceshi/ceshi.wxml</text>
+  <view bindtap="click">我是测试页</view>
+  <view wx:for="{{array}}">
+    No.{{index}} item, message: {{item.message}}
+  </view>
+  <!-- <view>---------点击事件----------</view> -->
+  <view bindtap="test_network">网络测试请求</view>
+  <button bindtap="testnetwork1">测试网络请求</button>
+  <button bindtap="shangchuan">上传图片</button>
+  <view>------------------------------</view>
+  <button bindtap="save">保存</button>
+  <button bindtap="read">读取</button>
+  <button bindtap="remove">清空缓存</button>
+  <button bindtap="clear">清除全部</button>
+</view>

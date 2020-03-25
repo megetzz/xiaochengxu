@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/apps/apps",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/icon_tabbar.png",
+      "selectedIconPath": "/images/abc.png"
+    },
+    {
+      "pagePath": "pages/apps/apps",
+      "text": "应用",
+      "iconPath": "/images/icon_tabbar.png",
+      "selectedIconPath": "/images/abc.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
